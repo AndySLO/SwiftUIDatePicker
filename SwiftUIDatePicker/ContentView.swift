@@ -15,7 +15,8 @@ struct ContentView: View {
             VStack {
                 DatePicker ("Trip Date",
                             selection: $date,
-                            in: Date () ... Date())
+                            in: Date()...,
+                            displayedComponents: .date)
                     .datePickerStyle(GraphicalDatePickerStyle())
                     .padding()
             }
